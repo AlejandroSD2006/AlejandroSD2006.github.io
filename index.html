@@ -3,89 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descubre la Alhambra</title>
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Estilos Globales */
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #4e54c8, #8f94fb);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
         }
-
-        /* Contenedor */
-        .container {
-            max-width: 900px;
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Encabezado */
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
             text-align: center;
-            color: #f8f9fa;
         }
-
-        /* Párrafo */
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 20px;
-            text-align: justify;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #f8d210;
         }
-
-        /* Botón de enlace */
-        .btn {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fff;
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #ffffff;
             text-decoration: none;
-            border: 2px solid #fff;
-            border-radius: 50px;
-            transition: all 0.3s ease;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px;
             text-align: center;
         }
-
-        .btn:hover {
-            background: #fff;
-            color: #4e54c8;
+        .about, .projects, .contact {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 1000px; /* Ampliado para permitir más espacio */
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .projects div {
+            flex: 1 1 calc(33% - 30px); /* Ajusta el tamaño de las imágenes */
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .projects img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+        .projects p {
+            margin-top: 10px;
+            color: #f8d210; /* Puedes cambiar el color del texto */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+            color: #bbbbbb;
+        }
+        footer a {
+            color: #f8d210;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Descubre la Alhambra</h1>
-        <p>
-            La Alhambra es un sitio declarado Patrimonio de la Humanidad por la UNESCO y se encuentra en Granada, España. Es un magnífico ejemplo de la arquitectura andalusí y es considerada una de las mayores obras de arte del período islámico. Originalmente construida como una pequeña fortaleza en el año 889, fue transformada en un palacio real por Yusuf I, sultán de Granada, en el siglo XIV.
-        </p>
-        <p>
-            Entre sus características más destacadas se encuentran los impresionantes patios, como el Patio de los Leones, los delicados mosaicos y los techos tallados en madera. Otro punto emblemático es la Sala de los Embajadores, ubicada en la Torre de Comares, donde se tomaban decisiones cruciales durante el reinado nazarí.
-        </p>
-        <p>
-            Los Jardines del Generalife, una villa de recreo, son otro de los atractivos principales. Este espacio ofrece tranquilidad y belleza con fuentes, flores, y vistas espectaculares de las montañas de Sierra Nevada y la ciudad de Granada. Estos jardines muestran la habilidad de los arquitectos árabes para crear espacios armoniosos entre la naturaleza y la arquitectura.
-        </p>
-        <p>
-            La Alhambra también refleja la convivencia de culturas, ya que su historia está marcada por influencias islámicas, cristianas y judías. Tras la Reconquista, los Reyes Católicos incorporaron elementos renacentistas, como el Palacio de Carlos V, que contrastan con el estilo islámico original.
-        </p>
-        <p>
-            Visitar la Alhambra es una experiencia inolvidable que combina historia, arte y paisajes únicos. Es un destino imprescindible para los amantes de la cultura y la arquitectura. Para más información sobre horarios y entradas, consulta las páginas oficiales o las oficinas de turismo.
-        </p>
-        <img src="https://www.visitargranada.com/wp-content/uploads/sites/3957/2020/03/Alhambra-patio-de-los-Arrayanes-copia1.jpg?w=1000&h=1000&zoom=2" width="200" height="250">
+    <header>
+        <h1>¡Bienvenido a Mi Portafolio!</h1>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
 
-        <a href="https://github.com/yourusername" class="btn">Visita mi GitHub</a>
-    </div>
+    <section id="about" class="section about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy [Tu Nombre], un apasionado desarrollador web con experiencia en la creación de sitios y aplicaciones modernas y funcionales.</p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Proyectos</h2>
+        <p>A continuación, alguno de los proyectos que tengo en mente:</p>
+        <div>
+            <img src="images/imagen1.jpeg" alt="Proyecto 1">
+            <p>Creación de una web dedicada a la sostenibilidad del medio ambiente.</p>
+        </div>
+        <div>
+            <img src="images/imagen2.jpeg" alt="Proyecto 2">
+            <p>Creación de una base de datos amplia con gran capacidad.</p>
+        </div>
+        <div>
+            <img src="images/imagen3.png" alt="Proyecto 3">
+            <p>Diseño gráfico de un modelo en 3D</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? ¡Contáctame!</p>
+        <p>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+        <p>Teléfono: +34 123 456 789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados. | <a href="#">Política de privacidad</a></p>
+    </footer>
 </body>
 </html>

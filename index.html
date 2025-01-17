@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -87,3 +88,130 @@
     </footer>
 </body>
 </html>
+=======
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #f8d210;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .about, .projects, .contact {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 1000px; /* Ampliado para permitir más espacio */
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .projects div {
+            flex: 1 1 calc(33% - 30px); /* Ajusta el tamaño de las imágenes */
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .projects img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .projects img:hover {
+            transform: scale(1.05);
+        }
+        .projects p {
+            margin-top: 10px;
+            color: #f8d210; /* Puedes cambiar el color del texto */
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            text-align: center;
+            color: #bbbbbb;
+        }
+        footer a {
+            color: #f8d210;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a Mi Portafolio!</h1>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy [Tu Nombre], un apasionado desarrollador web con experiencia en la creación de sitios y aplicaciones modernas y funcionales.</p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Proyectos</h2>
+        <p>A continuación, alguno de los proyectos que tengo en mente:</p>
+        <div>
+            <img src="images/imagen1.jpeg" alt="Proyecto 1">
+            <p>Creación de una web dedicada a la sostenibilidad del medio ambiente.</p>
+        </div>
+        <div>
+            <img src="images/imagen2.jpeg" alt="Proyecto 2">
+            <p>Creación de una base de datos amplia con gran capacidad.</p>
+        </div>
+        <div>
+            <img src="images/imagen3.png" alt="Proyecto 3">
+            <p>Diseño gráfico de un modelo en 3D</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes un proyecto en mente? ¡Contáctame!</p>
+        <p>Email: <a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+        <p>Teléfono: +34 123 456 789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados. | <a href="#">Política de privacidad</a></p>
+    </footer>
+</body>
+</html>
+>>>>>>> d84f2fe0b81881515d4219ddffd25896b1e03c55
